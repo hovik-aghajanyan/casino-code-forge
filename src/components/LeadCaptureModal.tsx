@@ -154,7 +154,7 @@ const LeadCaptureModal = ({ isOpen, onClose }: LeadCaptureModalProps) => {
                     <SelectValue placeholder="Select timeline" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="immediate">ASAP (< 3 months)</SelectItem>
+                    <SelectItem value="immediate">ASAP (&lt; 3 months)</SelectItem>
                     <SelectItem value="short">3-6 months</SelectItem>
                     <SelectItem value="medium">6-12 months</SelectItem>
                     <SelectItem value="long">12+ months</SelectItem>

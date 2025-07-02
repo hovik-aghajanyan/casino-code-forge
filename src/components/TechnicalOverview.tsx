@@ -99,7 +99,7 @@ const TechnicalOverview = () => {
                 <div className="text-sm text-gray-600">Concurrent users per instance</div>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
-                <div className="text-2xl font-bold text-blue-600">< 100ms</div>
+                <div className="text-2xl font-bold text-blue-600">&lt; 100ms</div>
                 <div className="text-sm text-gray-600">Average API response time</div>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
