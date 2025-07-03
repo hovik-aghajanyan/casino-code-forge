@@ -12,7 +12,7 @@ const PricingPlans = ({ onSelectPlan }: PricingPlansProps) => {
   const plans = [
     {
       name: "Startup License",
-      price: "$149,000",
+      price: "$549,000",
       period: "One-time",
       description: "Perfect for new casino operators and small to medium operations",
       popular: false,
@@ -30,7 +30,7 @@ const PricingPlans = ({ onSelectPlan }: PricingPlansProps) => {
     },
     {
       name: "Enterprise License",
-      price: "$299,000",
+      price: "$1,599,000",
       period: "One-time + Annual Updates",
       description: "Advanced features for established operators with high traffic",
       popular: true,
