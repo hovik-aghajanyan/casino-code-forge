@@ -62,7 +62,31 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/ee7d3192-a05e-45e6-a258-99cc4fc65aad) and click on Share -> Publish.
+### GitHub Pages Deployment
+
+This project is configured for automatic deployment to GitHub Pages. Here's how it works:
+
+1. **Automatic Deployment**: Every push to the `main` branch triggers a GitHub Actions workflow that builds and deploys the site.
+
+2. **Manual Deployment**: You can also manually trigger a deployment by going to the Actions tab in your GitHub repository and running the "Deploy to GitHub Pages" workflow.
+
+3. **Local Build Test**: To test the build locally before pushing:
+   ```sh
+   npm install
+   NODE_ENV=production npm run build
+   ```
+
+4. **Repository Settings**: Make sure GitHub Pages is enabled in your repository settings:
+   - Go to Settings > Pages
+   - Source: Deploy from a branch
+   - Branch: gh-pages (this will be created automatically by the workflow)
+
+5. **Access Your Site**: Once deployed, your site will be available at:
+   `https://yourusername.github.io/casino-code-forge/`
+
+### Alternative: Lovable Deployment
+
+You can also deploy directly through [Lovable](https://lovable.dev/projects/ee7d3192-a05e-45e6-a258-99cc4fc65aad) by clicking on Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 

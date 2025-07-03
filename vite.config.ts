@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: '/casino-code-forge/',
+  base: process.env.NODE_ENV === 'production' ? '/casino-code-forge/' : '/',
   plugins: [
     react(),
     mode === 'development' &&
@@ -19,5 +19,11 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
+    minify: 'esbuild',
   },
 }));
